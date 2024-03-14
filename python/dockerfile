@@ -1,0 +1,9 @@
+FROM python:latest
+
+## Standard python environment
+# Create virtual environment and upgrade pip
+RUN python3 -m venv /venv && /venv/bin/pip install --upgrade pip
+
+# Activate virtual environment
+RUN source /venv/bin/activate
+## End of standard python environment
